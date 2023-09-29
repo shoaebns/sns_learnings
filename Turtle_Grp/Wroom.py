@@ -31,5 +31,6 @@ def start_test():
         turtle.down()
         turtle.forward(distance)
         r += 1
-
+        
+        start_test()
 
