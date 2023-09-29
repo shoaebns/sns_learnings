@@ -1,7 +1,8 @@
 import turtle
 import math
 import random
-import Hit_Target as ht
+
+
 
 SCREEN_WIDTH = 600  # Screen width
 SCREEN_HEIGHT = 600  # Screen height
@@ -17,20 +18,54 @@ EAST = 0  # Angle of east direction
 NORTH = 90  # Angle of north direction
 SOUTH = 270  # Angle of south direction
 WEST = 180  # Angle of west direction
+angle_list = []
+zero_list = []
+frequency = []
+max = 0
+ans = -1
+for j in range(360):
+    frequency.insert(j,0)
+def initialize():
+    # for repeatable experiments
+    random.seed(2023)
 
-ht.initialize()
+    # Setup the window.
+    screen = turtle.Screen()
+    screen.setup(SCREEN_WIDTH, SCREEN_HEIGHT)
+
 
 def start_test():
-    turtle.home()
-    turtle.showturtle()
-    turtle.speed(SPEED)
     for r in range(100):
+        turtle.home()
+        turtle.showturtle()
+        turtle.speed(SPEED)
+    
         angle = random.randint(0, 360)
         distance = random.randint(0, MAX_DISTANCE + 1)
+        angle_list.append(angle)
         turtle.setheading(angle)
         turtle.down()
         turtle.forward(distance)
         r += 1
+
+
+    
+
+    for j in range(360):
+        frequency.insert(angle,frequency[angle]+1)
+        if max< frequency[angle]:
+            max = frequency[angle]
+            ans = angle
         
-        start_test()
+        print(ans,max)
+    
+        
+
+
+
+initialize()       
+start_test()
+
+
+turtle.mainloop()
 
