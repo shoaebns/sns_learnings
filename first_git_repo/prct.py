@@ -1,9 +1,12 @@
-def compute(numbers):
-    result = 1
-    for num in numbers:
-        result *= num - 3
-    return result
+import turtle
 
-values = [7, 4, 5]
-computed_value = compute(values)
-print(computed_value)
+t = turtle.Turtle()
+
+r = 10
+  
+# Loop for printing concentric circles
+for i in range(50):
+    t.circle(r * i)
+    t.up()
+    t.sety((r * i)*(-1))
+    t.down()
