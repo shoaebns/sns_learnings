@@ -17,7 +17,7 @@ NORTH = 90  # Angle of north direction
 SOUTH = 270  # Angle of south direction
 WEST = 180  # Angle of west direction
 
-pen = turtle.Turtle()
+exam = turtle.Turtle()
 
 def init():
     random.seed(2023)
@@ -28,7 +28,7 @@ def init():
 
 
 def circle(rad):
-    pen.circle(rad)
+    exam.circle(rad)
 
 
 init()
@@ -37,4 +37,4 @@ circle(50)
 
 
 
-pen.screen.mainloop()
+exam.screen.mainloop()
