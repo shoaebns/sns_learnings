@@ -8,3 +8,4 @@ def is_palindrome(string):
 str = (input())
 
 is_palindrome(str)
+

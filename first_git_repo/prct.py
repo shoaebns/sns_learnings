@@ -10,3 +10,6 @@ for i in range(50):
     t.up()
     t.sety((r * i)*(-1))
     t.down()
+
+if __name__ == "__main__":
+    pass
