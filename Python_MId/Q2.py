@@ -11,7 +11,7 @@ def shipping_charge(weight):
         return 3 * 2.75 + 4 * 3.00 + 8 * 3.17 + (weight - 15) * 3.70
 
 def output():
-    random.seed(2023)
+    random.seed(20)
     weights = []
     for i in range(10):
         weights.append(random.randint(1,20))
