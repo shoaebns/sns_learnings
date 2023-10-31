@@ -1,12 +1,7 @@
-user_input = input()
+user  = 'umbrellainrainyday'
 
-try:
-    for i in range (10):
-        if i == int(user_input):
-            print('Its In')
-        
-        
-except:
-    print('Not Valid')
-print('Done')
+print(len(user))
 
+# print(user[-12])
+
+print(user[:10])

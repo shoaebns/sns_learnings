@@ -1,0 +1,1 @@
+print(f'{air_temperature:.1f}C')
