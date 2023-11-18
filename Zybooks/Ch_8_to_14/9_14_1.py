@@ -11,5 +11,5 @@ for pair in entries:
 
 for country, pop in country_pop.items():
 
-    '''^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'''
+    '''^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'''
     print(f'{country} has {pop} people.')
